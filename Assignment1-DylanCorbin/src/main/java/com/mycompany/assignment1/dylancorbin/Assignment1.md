@@ -1,4 +1,4 @@
-#Purpose:
+# Purpose:
 This program is designed to take an array of 10 or more integers then find the highest and lowest values, sum the numbers in the array and take the average. 
 
 The function that checks for the lowest value initializes the lowest value to the first value in the array. Then it compares each value in the array to the 
