@@ -1,5 +1,9 @@
 #Purpose:
-This program is designed to take an array of ten integers and find the lowest and highest integers in the array. It also has to calculate the sum of all of the integers in the array as well as the average of the array. Each function of the program is contained within its own method and returns the result. The concepts reinforced by this assignment are control flows, loop structures and logical operators.
+This program is designed to take an array of 10 or more integers then find the highest and lowest values, sum the numbers in the array and take the average. 
 
-The lowest int function uses a variable initialized to the first element in the array, using the size of the array as the upper constraint. The array is iterated over using a for loop and an if statement. If the value at the current index is smaller than the current stored value, the stored value is replaced. The highest int method works in a similar way but instead of using a less than operator it uses a greater than, so it is always looking for the highest value. The sum method also uses a for loop and a variable initialized as zero. It uses the += operator to add the value at the current index to the total in the variable. The average method actually calls my sum method to get the total and converts the result to a double for accuracy in the result because the sum is then divided by the size of the array to get the average and a double allows for bigger floating point numbers. The output of my implementation displays the results of each of these methods. This is accomplished by assigning the return value of each method to a variable and using the println built-in method and the tabulation escape sequence to format the output into a readable format.
+The function that checks for the lowest value initializes the lowest value to the first value in the array. Then it compares each value in the array to the 
+current lowest value, if it comes across one, it reassigns that value to the lowest variable. The greatest function works in the same way but inverts the 
+comparison operator to find the highest value.
 
+The addition function sums the values in the array by iterating over the array and adding each value to the sum variable. The average function calls this addition
+function then divides the sum by the length of the array.
